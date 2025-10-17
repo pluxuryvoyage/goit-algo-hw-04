@@ -23,7 +23,7 @@ def get_cats_info(path):
                 cat = {
                     "id": parts[0].strip(),
                     "name": parts[1].strip(),
-                    "age": int(parts[2].strip()),
+                    "age": parts[2].strip(),
                 }
                 cats.append(cat)
             except (ValueError):
